@@ -23,7 +23,7 @@ geschieht via AJAX, damit die Ausgabe der Webseite nicht durch den zusaetzlichen
 3. Das Plugin unter Plugins -> "Scoutnet Kalender" aktivieren
 4. Das Widget kannst du dann sofort unter Design->Widgets in dein Theme einbinden. Fuer Seiten und Artikel gibt es dann den Shortcode.
 
-Unter den EInstellungen kannst du die Standartwerte vorgeben und die Shortcodes nachschlagen.
+Unter den Einstellungen kannst du die Standartwerte vorgeben und die Shortcodes nachschlagen.
 
 == Frequently Asked Questions ==
 
