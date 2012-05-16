@@ -3,7 +3,7 @@
   Plugin Name: Scoutnet Kalender
   Plugin URI: http://www.scoutnet.de/technik/kalender/include/einbindung_cms.html#wordpress
   Description: Zeigt Termine und Details aus dem Scoutnet-Kalender in Seiten, Artikeln und einem Widget an.
-  Version: 0.1.7
+  Version: 0.1.7b
   Author: Scoutnet und Bj&ouml;rn Stromberg
   Author URI: http://www.scoutnet.de/
   Text Domain: scoutnet_kalender
