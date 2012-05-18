@@ -146,7 +146,7 @@ class tx_shscoutnetwebservice_jsonRPCClient {
 				CURLOPT_RETURNTRANSFER	=> true,
 				CURLOPT_SSL_VERIFYHOST 	=> false,
 				CURLOPT_SSL_VERIFYPEER 	=> false,
-				CURLOPT_FOLLOWLOCATION	=> true,
+				CURLOPT_FOLLOWLOCATION	=> false,
 			);
 			$ch = curl_init();
 			curl_setopt_array( $ch, $options );

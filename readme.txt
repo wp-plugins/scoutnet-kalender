@@ -49,6 +49,9 @@ Zum Beispiel hier: http://www.dpsg-paderborn.derweed
 
 == Changelog ==
 
+= 0.1.8 =
+- CURL-Fehler bei safe_mode Konfiguration behoben
+
 = 0.1.7b =
 - Readme Markup fixes. Daemliche Umlaute.
 
