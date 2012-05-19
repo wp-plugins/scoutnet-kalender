@@ -1,5 +1,5 @@
 === Scoutnet Kalender ===
-Contributors: sumotz, derweed, lordq
+Contributors: snkmuetze, derweed, lordq
 Tags: Scoutnet, Scoutnetkalender, Scoutnet-Kalender, Scoutnet Kalender, Scoutnetwidget
 Requires at least: 3.0
 Tested up to: 3.3
