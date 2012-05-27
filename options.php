@@ -15,7 +15,7 @@
 	    </tr>
 	</table>
 	<p>Du kannst auch mehrere (und verschiedene) Kalender gleichzeitig nutzen. Gib der jeweiligen Seite oder dem Widget einfach die ID die du anzeigen möchtest mit.</p>
-	
+
 	<h2>In Seiten einbinden</h2>
 	<p>Du kannst deine Terminübersicht in einer Seite oder einem Artikel anzeigen. verwende dazu einfach folgenden Shortcode:</p>
 	<code>[snk elementcount="5" externalTemplateName="NAME" ssid="3" /]</code>
