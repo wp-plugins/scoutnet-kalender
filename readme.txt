@@ -49,6 +49,9 @@ Zum Beispiel hier: http://www.dpsg-paderborn.derweed
 
 == Changelog ==
 
+= 0.1.9 =
+- Fix: Termine im Widget sind um eine oder Zwei Stunden verschoben.
+
 = 0.1.8 =
 - CURL-Fehler bei safe_mode Konfiguration behoben
 
