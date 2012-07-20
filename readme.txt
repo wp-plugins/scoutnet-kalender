@@ -30,11 +30,14 @@ Unter den Einstellungen kannst du die Standartwerte vorgeben und die Shortcodes 
 = Wie nutze ich ein eigenes Template fuer eigenes HTML/CSS? =
 Kein Problem, das geht ganz einfach. Diese Anleitung gilt fuer die Inline-Anzeige und das Widget - nimm einfach die jeweils wie gewuenscht benannten Dateien.
 
-1. Kopiere die anzupassende Datei "scoutnet-kalender_[inline oder widget]_kalender_EXAMPLE_list.php" von /templates in dein Theme-Verzeichnis (wp-content/themes/<deintheme>).
+1. Kopiere die anzupassende Datei "scoutnet-kalender_[inline oder widget]_kalender_EXAMPLE_list.php" von /templates/ in dein Theme-Verzeichnis (wp-content/themes/<deintheme>).
 2. Benenne diese dann dort um, so wie du dein Template nennen moechtest. Z.B. "scoutnet-kalender_inline_kalender_MEINNAME_list.php"
 3. Trage diesen Namen (achte auf Klein-Grosschreibung) in das Widget bzw. den Shortcode ein.
 
 Du kannst diese Dateien nun in deinem Theme-Ordner bearbeiten, ohne das sie bei einem Update des Plugins ueberschrieben werden.
+
+= Beispiele fuer eigene Templates =
+Die findest du in /templates/EXAMPLE. Kopiere diese in dein Theme-Verzeichnis.
 
 = Welche Kalender-ID ist welche? =
 Dazu findest du mehr Informationen unter: http://www.scoutnet.de/technik/kalender/kurzanleitung.html
