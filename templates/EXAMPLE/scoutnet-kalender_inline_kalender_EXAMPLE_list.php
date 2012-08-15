@@ -48,7 +48,7 @@ foreach($events as $event) { /* @var $event SN_Model_Event */
 				} ?>
 				Start: <?php echo date('G:i', $event->Start); ?> Uhr<br />
 				<?php if (trim($event->URL)!="") { echo "Link: <a href=".$event->URL.">".$event->URL."</a><br />"; } ?>
-				Autor: <?php echo $event->Author->get_full_name(); ?> (g&auml;ndert am <?php echo date('d.m.Y', $event->Last_Modified_At);?>)
+				Autor: <?php echo $event->Author->get_full_name(); ?> (ge&auml;ndert am <?php echo date('d.m.Y', $event->Last_Modified_At);?>)
 			</small>	
 		</div>
 	</div>
