@@ -54,8 +54,8 @@ class ScoutnetKalender {
 	$events = ScoutnetKalender::getSnEvents($ssid, $elementcount);
 	$buffer = ob_start();
 	
-	if (!empty($externalTemplateName) && @is_readable(TEMPLATEPATH.'/scoutnet-kalender_inline_kalender_'.$externalTemplateName.'_list.php')) {
-		require(TEMPLATEPATH.'/scoutnet-kalender_inline_kalender_'.$externalTemplateName.'_list.php');
+	if (!empty($externalTemplateName) && @is_readable(get_stylesheet_directory().'/scoutnet-kalender_inline_kalender_'.$externalTemplateName.'_list.php')) {
+		require(get_stylesheet_directory().'/scoutnet-kalender_inline_kalender_'.$externalTemplateName.'_list.php');
 	} else {
 		require(plugin_dir_path(__FILE__).'/templates/inline_kalender_list.php');
 	}
@@ -83,11 +83,12 @@ class ScoutnetKalender {
 				'after' => 'now()',
 			);
 		}
-
-        $ids = array($ssid);
+		
+		// Use 'explode' instead of 'array' to be able to procees mutliple calenders
+        $ids = explode(',', $ssid);
 
         $events = $SN->get_events_for_global_id_with_filter($ids, $filter);
-        return $events;
+		return $events;
     }
 }
 
@@ -176,9 +177,9 @@ class ScoutnetKalenderWidget extends WP_Widget {
 		// vorausgesetzt die Datei existiert und ist lesbar
 		// Ein externes Template ist in diesem Kontext ein Template das sich innerhalb des gerade genutzten Themes befindet,
 		// statt im Plugin-Templates-Ordner
-        if (!empty($externalTemplateName) && @is_readable(TEMPLATEPATH.'/scoutnet-kalender_widget_kalender_'.$externalTemplateName.'_list.php')) {
+        if (!empty($externalTemplateName) && @is_readable(get_stylesheet_directory().'/scoutnet-kalender_widget_kalender_'.$externalTemplateName.'_list.php')) {
         	/* externes Template list.php */
-        	require (TEMPLATEPATH.'/scoutnet-kalender_widget_kalender_'.$externalTemplateName.'_list.php');
+        	require (get_stylesheet_directory().'/scoutnet-kalender_widget_kalender_'.$externalTemplateName.'_list.php');
         } else {
         	/* internes Template list.php */
         	require (plugin_dir_path(__FILE__).'templates/widget_kalender_list.php');
