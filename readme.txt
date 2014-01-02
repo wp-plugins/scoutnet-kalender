@@ -13,7 +13,7 @@ Zeigt Termine und Termindetails aus einem Scoutnet-Kalender in einer Seite (via 
 
 Holt dir Termine und deren Details aus dem Scoutnet-Kalender in dein Wordpress - als eigene Seite oder in ein Widget. Zeigt
 auch mehrere Kalender gleichzeitig an und kann sehr einfach angepasst werden. Die Aktualisierung der Widget-Termine aus dem Scoutnet
-geschieht via AJAX, damit die Ausgabe der Webseite nicht durch die (zusaetzlichen) Anfragen verzoegert wird. Möglich ist auch die Anzeige 
+geschieht via AJAX, damit die Ausgabe der Webseite nicht durch die (zusaetzlichen) Anfragen verzoegert wird. Moeglich ist auch die Anzeige 
 von Terminen aus mehreren Kalendern.
 
 
@@ -55,8 +55,8 @@ Aber sicher, zum Beispiel hier: http://www.dpsg-paderborn.de
 == Changelog ==
 
 = 0.2.1 =
-- Verwendung von "get_stylesheet_directory()" anstelle von "TEMPLATEPATH" fpr die Unterstützung von Child-Themes (Danke Tobi)
-- Anpassung der Datenübernahme für mehrere Kalender (z.B. Bezirkskalender und alle Stammeskalender) (Danke Tobi)
+- Verwendung von "get_stylesheet_directory()" anstelle von "TEMPLATEPATH" fpr die Unterstuetzung von Child-Themes (Danke Tobi)
+- Anpassung der Datenuebernahme für mehrere Kalender (z.B. Bezirkskalender und alle Stammeskalender) (Danke Tobi)
 
 = 0.2.0 =
 - Cleanup (doppelte Dateien entfernt)
