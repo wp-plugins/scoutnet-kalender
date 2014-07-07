@@ -3,7 +3,7 @@ Contributors: muetze, derweed, lordq, okay75
 Tags: Scoutnet, Scoutnetkalender, Scoutnet-Kalender, Scoutnet Kalender, Scoutnetwidget
 Requires at least: 3.0
 Tested up to: 3.9
-Stable tag: 0.2.3
+Stable tag: 0.2.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -63,6 +63,10 @@ Das 'process' Minify verschiebt das Javascript des Footers in den HEAD deines Do
 2. Das Widget (mit dem EXAMPLE-Template)
 
 == Changelog ==
+
+= 0.2.4 =
+- Fix: Falsche Ausgabe-Uhrzeit in Inline-Template (Danke Maxi)
+- Change: Das Inline-Template EXAMPLE gibt jetzt anstatt 1970 als aenderungsdatum das Erstellungsdatum des Termins aus. Macht mehr Sinn (Danke Maxi)
 
 = 0.2.2 =
 - Fix: Readme angepasst, neue Release korrekt getaggt
