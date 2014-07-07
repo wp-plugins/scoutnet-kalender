@@ -20,7 +20,7 @@
 // deutsch, deutscher, am deutschesten
 setlocale (LC_ALL, 'de_DE@euro', 'de_DE', 'de', 'ge');
 
-// Zeitzone
+// Deutsche Zeit
 date_default_timezone_set('Europe/Berlin');
 
 // URL-Kuerzung
@@ -51,24 +51,35 @@ foreach($events as $event) { /* @var $event SN_Model_Event */
 			if (trim($event->Description)!="") { echo "<p>" . $event->Description . "</p>"; } ?>
 			<small>
 				<?php
-				// Ort mit PLZ ausgeben
+				// Ort mit PLZ
 				if (trim($event->Location)!="") {
 					echo "Ort: ";
 					if (trim($event->ZIP)!="") {echo $event->ZIP . " ";}
 					echo $event->Location;
 					echo "<br />";
 				}
+
 				// Startzeit
 				if (trim($event->Start)!="") {
 					echo "Start: " . date('G:i', $event->Start) . "Uhr<br />";
 				}
+
 				// Link
 				if (trim($event->URL)!="") {
 					echo "Link: <a title=\"" . $event->Title . " (" . $event->URL . ")" . "\" href=" . $event->URL . ">";
 					short_url($event->URL, 100);
 					echo "</a><br />";
 				}
-				// Autor
+
+				// Autor und zuletzt geaendert
+		                if (trim($event->Author->get_full_name())!="") {
+		                     if ($event->Last_Modified_At != 0) {
+						echo "Autor: " . $event->Author->get_full_name() . "(ge&auml;ndert am " . date('d.m.Y', $event->Last_Modified_At) . ")";
+					} else {
+						echo "Autor: " . $event->Author->get_full_name() . "(ge&auml;ndert am " . date('d.m.Y',$event->Created_At) . ")";
+					}
+				}
+
 				if (trim($event->Author->get_full_name())!="") {
 					echo "Autor: " . $event->Author->get_full_name() . "(ge&auml;ndert am " . date('d.m.Y', $event->Last_Modified_At) . ")";
 				}

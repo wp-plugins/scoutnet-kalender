@@ -1,4 +1,8 @@
 <?php
+
+// Deutsche Zeit
+date_default_timezone_set('Europe/Berlin');
+
 	// Wenn der Aufruf (noch) nicht per AJAX kam, dann dient er zur Vorbereitung der AJAX-Abfrage
 	if ($ajaxcall !== true) {
 		// Daher bauen wir an dieser Stelle das Ziel-DIV zusammen, in das wir dann beim zweiten Lauf die Daten reinladen wollen.

@@ -10,6 +10,9 @@
 		<?php var_dump($event); ?>
 */ 	
 
+// Deutsche Zeit
+date_default_timezone_set('Europe/Berlin');
+
 foreach($events as $event) { /* @var $event SN_Model_Event */
 ?>
 	<h2><?php echo date('d.m.Y', $event->Start); ?></span>: <?php echo $event->Title; ?></h2>
