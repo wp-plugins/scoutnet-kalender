@@ -3,7 +3,7 @@ Contributors: muetze, derweed, lordq, okay75
 Tags: Scoutnet, Scoutnetkalender, Scoutnet-Kalender, Scoutnet Kalender, Scoutnetwidget
 Requires at least: 3.0
 Tested up to: 3.9
-Stable tag: 0.2.4
+Stable tag: 0.2.5
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,17 +11,19 @@ Zeigt Termine und Termindetails aus einem Scoutnet-Kalender in einer Seite (via 
 
 == Description ==
 
-Das Scoutnet-Kalender Wordpress Plugin zeigt Termine und Details aus dem Scoutnet-Kalender direkt in Wordpress an. Keine iFrames, iCAL,
-Konverteierung oder aehnliches notwendig. Dieses Plugin enthaelt Shortcodes fuer eigene Seiten und Beitraege und ein modernes Widget.
-Einbindung mehrerer verschiedener Kalender moeglich, einfaches Template-System, gute Beispiele. Die Aktualisierung der Widget-Termine
-geschieht asynchron, damit die Ausgabe der Webseite nicht verzoegert wird.
+Zeigt Termine und deren Details aus dem Scoutnet-Kalender in WordPress Seiten und einem Widget an. Es sind keine iFrames, iCAL,
+oder Datenkonverteierung notwendig, die Daten kommen in Echzeit von der API. Das Plugin versteht Shortcodes fuer eigene Seiten und
+Beitraege und enthaelt ein modernes Widget fuer die Sidebar.
+Es ist nun die Einbindung mehrerer verschiedener Kalender moeglich, es gibt ein (einfaches) Template-System zur Anpassung des Layouts
+und gute Beispiel-Vorlagen. Die Aktualisierung der Widget-Termine geschieht asynchron per AJAX, damit die Ausgabe der Webseite nicht
+verzoegert wird wenn das Scoutnet laggt.
 
 
 == Installation ==
 
 1. .zip file herunterladen, auspacken
 2. Den Ordner "scoutnet-kalender" mit allen Dateien in das Pluginverzeichnis (/wp-content/plugins/) hochladen
-3. Das Plugin im Wordpress-Dashboard unter Plugins -> "Scoutnet Kalender" aktivieren
+3. Das Plugin im WordPress-Dashboard unter Plugins -> "Scoutnet Kalender" aktivieren
 4. Das Widget kannst du dann sofort unter Design->Widgets in dein Theme einbinden.
 
 Fuer Seiten und Artikel mit Terminen darauf gibt es einen Shortcode.
@@ -31,12 +33,12 @@ Unter den 'Einstellungen' kannst du die Standartwerte vorgeben und die Shortcode
 == Frequently Asked Questions ==
 
 = Wie nutze ich ein eigenes Template fuer eigenes HTML/CSS? =
-Kein Problem, das geht ganz einfach. Diese Anleitung gilt fuer die Inline-Anzeige und das Widget - nimm einfach die jeweils wie gewuenscht benannten Dateien.
+Diese Anleitung gilt fuer die Inline-Anzeige und das Widget - nimm einfach die passenden Dateien.
 
-1. Kopiere dein Template "scoutnet-kalender_[inline oder widget]_kalender_EXAMPLE_list.php" von plugins/scoutnet-kalender/templates/ in dein Theme-Verzeichnis (wp-content/themes/<deintheme>).
+1. Kopiere dein Template "scoutnet-kalender_[inline oder widget]_kalender_EXAMPLE_list.php" von scoutnet-kalender/templates/ in dein Theme-Verzeichnis (wp-content/themes/<deintheme>).
 2. Benenne das Template um, z.B. "scoutnet-kalender_inline_kalender_MEINNAME_list.php"
-3. Trage DIESEN Namen (achte auf Klein-Grosschreibung) in das Widget oder deinen Shortcode ein
-4. Fuege die CSS-Formatierung aus der EXAMPLE_style.css in deine style.css in deinem Theme-Ordner ein (oder formatiere deine Ausgabe selbst)
+3. Trage DIESEN Namen (achte dabei auf Klein-Grosschreibung) in das Widget (oder deinen Shortcode) ein
+4. Fuege die CSS-Formatierung aus der EXAMPLE_style.css in deine eigene style.css in deinem Theme-Ordner ein (oder formatiere deine Ausgabe selbst)
 
 Du kannst diese Dateien nun in deinem Theme-Ordner bearbeiten, ohne das sie bei einem Update des Plugins ueberschrieben werden.
 
@@ -62,7 +64,12 @@ Das 'process' Minify verschiebt das Javascript des Footers in den HEAD deines Do
 1. Die Widget-Konfiguration
 2. Das Widget (mit dem EXAMPLE-Template)
 
+
 == Changelog ==
+
+= 0.2.5 =
+- Fix: Readme Tippfehler
+- Fix: Falscher Pfad in ABSURL
 
 = 0.2.4 =
 - Fix: Falsche Ausgabe-Uhrzeit in Inline-Template (Danke Maxi)
@@ -73,10 +80,9 @@ Das 'process' Minify verschiebt das Javascript des Footers in den HEAD deines Do
 - Fix: Tippfehler ohne Ende korrigiert
 - Fix: Anpassung Doku
 
-
 = 0.2.1 =
 - Fix: Verwendung von "get_stylesheet_directory()" anstelle von "TEMPLATEPATH" fpr die Unterstuetzung von Child-Themes (Danke Tobi)
-- Feature: Anpassung der Datenuebernahme für mehrere Kalender (z.B. Bezirkskalender und alle Stammeskalender) (Danke Tobi)
+- Feature: Anpassung der Datenuebernahme fuer mehrere Kalender (z.B. Bezirkskalender und alle Stammeskalender) (Danke Tobi)
 
 = 0.2.0 =
 - Fix: Cleanup (doppelte Dateien entfernt)
