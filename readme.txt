@@ -3,7 +3,7 @@ Contributors: muetze, derweed, lordq, okay75
 Tags: Scoutnet, Scoutnetkalender, Scoutnet-Kalender, Scoutnet Kalender, Scoutnetwidget
 Requires at least: 3.0
 Tested up to: 4.0
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
