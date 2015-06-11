@@ -2,21 +2,19 @@
 Contributors: muetze, derweed, lordq, okay75
 Tags: Scoutnet, Scoutnetkalender, Scoutnet-Kalender, Scoutnet Kalender, Scoutnetwidget
 Requires at least: 3.0
-Tested up to: 4.0
-Stable tag: 1.0.2
+Tested up to: 4.22
+Stable tag: 1.0.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Zeigt Termine und Termindetails aus einem Scoutnet-Kalender in einer Seite (via Shortcode) oder in einem eigenen Wordpress-Widget an.
+Zeigt Termine und beliebige Termindetails aus dem Scoutnet-Kalender in Seiten (via Shortcode) oder in einem Wordpress-Widget an. Kann auch mehrere Kalender anzeigen.
 
 == Description ==
 
 Zeigt Termine und deren Details aus dem Scoutnet-Kalender in WordPress Seiten und einem Widget an. Es sind keine iFrames, iCAL,
-oder Datenkonverteierung notwendig, die Daten kommen in Echzeit von der API. Das Plugin versteht Shortcodes fuer eigene Seiten und
-Beitraege und enthaelt ein modernes Widget fuer die Sidebar.
-Es ist nun die Einbindung mehrerer verschiedener Kalender moeglich, es gibt ein (einfaches) Template-System zur Anpassung des Layouts
-und gute Beispiel-Vorlagen. Die Aktualisierung der Widget-Termine geschieht asynchron per AJAX, damit die Ausgabe der Webseite nicht
-verzoegert wird wenn das Scoutnet laggt.
+oder Datenkonverteierung notwendig, die Daten kommen in Echzeit von der Scoutnet API. Das Plugin versteht Shortcodes fuer eigene Seiten und Beitraege und enthaelt ein templatefaehiges Widget fuer die Sidebar.
+Es ist die Einbindung mehrerer verschiedener Kalender moeglich, es gibt ein (einfaches) Template-System zur Anpassung des Layouts
+und kommentierte Beispiel-Vorlagen. Die Aktualisierung der Widget-Termine geschieht in einem Template beispielsweise asynchron per AJAX, damit die Ausgabe der Webseite nicht verzoegert wird wenn Scoutnet laggt :-)
 
 
 == Installation ==
@@ -66,6 +64,9 @@ Das 'process' Minify verschiebt das Javascript des Footers in den HEAD deines Do
 
 
 == Changelog ==
+
+= 1.0.3 =
+- Fix: Kommentar-Ausbau, Wordpress-Updatefehlersuche (das Repository mochte nicht)
 
 = 0.2.5 =
 - Fix: Tippfehler, Commit-Fehler

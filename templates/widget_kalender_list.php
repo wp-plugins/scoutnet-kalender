@@ -22,7 +22,7 @@ date_default_timezone_set('Europe/Berlin');
 		foreach($events as $event) { /* @var $event SN_Model_Event */
 		?>
 			<div>
-				<strong><?php echo date('d.n.Y', $event->Start); ?> <?php echo date('G:i', $event->Start); ?> <?php echo $event->Location; ?></strong><br />
+				<strong><?php echo date('d.n.Y', $event->Start); ?> <?php echo gmdate('G:i', $event->Start); ?> <?php echo $event->Location; ?></strong><br />
 				<?php
 				if (trim($event->URL)=="") {
 					echo $event->Title;
